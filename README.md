@@ -35,12 +35,6 @@ Three classification models were trained and evaluated:
 -   **Decision Tree Classifier**
 -   **Random Forest Classifier**
 
-**Model Performance Summary:**
-| Model               | Accuracy | ROC-AUC | F1 Score |
-| :------------------ | :------- | :------ | :------- |
-| Logistic Regression | 0.7566   | 0.8231  | 0.6044   |
-| Decision Tree       | 0.7658   | 0.8174  | 0.6034   |
-| **Random Forest**   | **0.7736** | **0.8343** | **0.6124** |
 
 The **Random Forest Classifier** achieved the best overall performance, with the highest ROC-AUC and F1 Score, indicating its superior ability to identify churners while balancing precision and recall.
 
@@ -67,5 +61,3 @@ An in-memory SQLite database was used to perform detailed SQL queries, confirmin
 -   **High-Risk Segment**: A specific segment (month-to-month, fiber optic, no security/tech support) consisting of 1524 customers had a 60.70% churn rate with high average monthly charges ($84.65).
 -   **Predictions Analysis**: High-risk customers (from model predictions) showed an actual churn rate of 59.78% and an average predicted probability of 77.10%.
 
-## Conclusion
-This notebook provides a complete workflow from data loading and cleaning to advanced modeling and actionable business recommendations. The insights gained are crucial for developing targeted strategies to reduce customer churn and improve customer retention for Telco companies.
